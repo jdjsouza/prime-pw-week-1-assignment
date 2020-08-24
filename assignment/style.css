@@ -1,11 +1,71 @@
 /* Give your page a fun background color */
-
+body {
+  background-color: #008ca0;
+}
 /* Make the header and footer a different color from the background */
-
+.headerFooter {
+  color: white;
+}
 /* Align the h1 containing your name in the center of the header*/
-
+h1  {
+  text-align: center;
+}
 /* Make your p tag a different color and italic */
-
+p {
+  color: gold;
+  font-style: italic;
+}
 /* Put a border around your image */
+.myPic {
+  width: 450px;
+  height: 800px;
+  border: 5px solid #4b5f6d;
+}
+
+.myPic:hover {
+  transform: scaleX(-1);
+}
+/* This container would be required to move the list and footer below the image or a similar container would be needed to move the footer back to the bottom and I don't 100% understand why that is for the footer.
+.container {
+  width: 100%;
+  height: 800px;
+}
+*/
+
+.hvrbox{
+ position: relative;
+ float: left;
+ margin-right: 10px;
+ padding-right: 30px;
+}
+
+.hvrbox div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear;
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.hvrbox:hover{
+ cursor: pointer;
+}
+
+.hvrbox:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7;
+}
 
 /* Change the font-family of your list */
+ul {
+  padding-top: 525px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
